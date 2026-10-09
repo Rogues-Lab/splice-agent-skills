@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "splice": {
+      "type": "http",
+      "url": "https://splice.film.fun/api/mcp"
+    }
+  }
+}

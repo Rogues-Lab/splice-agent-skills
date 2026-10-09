@@ -1,0 +1,16 @@
+{
+  "name": "splice",
+  "displayName": "Splice by film.fun",
+  "version": "1.0.0",
+  "description": "Generate and edit AI images, video, voice and music, render motion graphics, run tested templates and check prices with Splice, film.fun's AI filmmaking studio. Includes the Splice remote MCP server (OAuth sign-in).",
+  "author": {
+    "name": "film.fun",
+    "url": "https://splice.film.fun"
+  },
+  "homepage": "https://splice.film.fun/developers",
+  "repository": "https://github.com/Rogues-Lab/splice-agent-skills",
+  "license": "MIT",
+  "keywords": ["splice", "film.fun", "video", "image", "generation", "ai", "mcp", "filmmaking", "motion-graphics"],
+  "documentationUrl": "https://splice.film.fun/developers",
+  "termsOfServiceUrl": "https://www.film.fun/terms"
+}

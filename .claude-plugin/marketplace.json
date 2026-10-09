@@ -1,0 +1,15 @@
+{
+  "name": "splice",
+  "description": "Splice by film.fun: AI image, video, voice, music and motion-graphics generation for agents.",
+  "owner": {
+    "name": "film.fun",
+    "url": "https://splice.film.fun"
+  },
+  "plugins": [
+    {
+      "name": "splice",
+      "source": "./",
+      "description": "Splice agent skills plus the Splice remote MCP server (OAuth sign-in)."
+    }
+  ]
+}
