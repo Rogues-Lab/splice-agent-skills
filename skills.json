@@ -1,0 +1,138 @@
+{
+  "schema": "splice-agent-skills/manifest@1",
+  "version": "1.4.0+skills.47e6a1992057",
+  "mcp_version": "1.4.0",
+  "content_hash": "47e6a1992057",
+  "origin": "https://splice.film.fun",
+  "mcp_url": "https://splice.film.fun/api/mcp",
+  "docs_mcp_url": "https://splice.film.fun/api/mcp/docs",
+  "index_url": "https://splice.film.fun/.well-known/agent-skills/index.json",
+  "skills": [
+    {
+      "name": "splice-generate-media",
+      "title": "Generate images, video, voice and music with Splice",
+      "version": "1.3.0",
+      "description": "Generate AI images, video (text-to-video and image-to-video), voiceovers, music and sound effects with Splice by film.fun, on the user's Splice account. Use when someone asks to create a picture, a video clip or shot, a voiceover, a song or a sound effect, and wants a choice of current models with a clear price in credits.",
+      "path": "skills/splice-generate-media/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-generate-media/SKILL.md",
+      "digest": "sha256:11c02984ec2cc1e4c15708aff48aaf0f065625696dc58ff6deb33447e70839c9"
+    },
+    {
+      "name": "splice-edit-media",
+      "title": "Edit, upscale and reframe media with Splice",
+      "version": "1.0.0",
+      "description": "Edit existing media with Splice by film.fun: instruction-based image edits, image and video upscaling, video reframing to 9:16/1:1/16:9, clipping, merging clips, burning captions, lip sync and transcription. Use when someone already has an image, video or audio file and wants it changed, enlarged, resized for a platform or captioned.",
+      "path": "skills/splice-edit-media/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-edit-media/SKILL.md",
+      "digest": "sha256:407fff26e04562309c8caed2c8c06cd1204794aea6ab6b6dc063422bc5d762db"
+    },
+    {
+      "name": "splice-motion-graphics",
+      "title": "Render motion graphics with Splice",
+      "version": "1.0.0",
+      "description": "Create and render motion graphics (title cards, lower-thirds, kinetic typography, logo stings, stat reveals) as HTML + GSAP compositions rendered to MP4, WebM or PNG with Splice by film.fun. Use when someone wants deterministic animated text or graphics rather than a photoreal generated video.",
+      "path": "skills/splice-motion-graphics/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-motion-graphics/SKILL.md",
+      "digest": "sha256:96fe57d79df55bcd2e95a98162571bd5ea9eae6f0cc96c286e0ca6b64dc30a1d"
+    },
+    {
+      "name": "splice-studio-editing",
+      "title": "Edit a Studio timeline with Splice",
+      "version": "1.0.0",
+      "description": "Build and edit Splice Studio (video editor) timelines without opening the editor: rough cuts from shots, voice-over with music ducking, title cards, captions, picture-in-picture bubbles, trims, transitions, colour, loudness, then export to MP4. Every edit is a free, revertable revision. Use when someone wants a cut assembled, changed or exported.",
+      "path": "skills/splice-studio-editing/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-studio-editing/SKILL.md",
+      "digest": "sha256:846afe584932ec4371a73cb3c567f9e433dd9e73a4ea9d2d6bdde6ffdd8ee99f"
+    },
+    {
+      "name": "splice-motion-editing",
+      "title": "Edit a Motion composition with Splice",
+      "version": "1.1.0",
+      "description": "Change an existing Splice Motion composition (HTML + GSAP title cards, lower-thirds, kinetic type): text, fonts, colours, timing, animations, media layers, stage size, with batched, validated, revertable edits and a cheap PNG check. Use when someone wants to tweak a motion graphic rather than make a new one.",
+      "path": "skills/splice-motion-editing/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-motion-editing/SKILL.md",
+      "digest": "sha256:b36869ca2fa892c936def594f7a58e70095815c79a912dddb0445029037ea34e"
+    },
+    {
+      "name": "splice-universe-entities",
+      "title": "Consistent characters, locations, props and sets: reference sheets and @slugs",
+      "version": "1.1.0",
+      "description": "Keep a film's characters, locations, props and sets looking the same in every shot with Splice by film.fun: create each Universe entity, generate its reference sheet (turnaround or several views on one image), set the sheet as its default image, give it an @slug and mention it in image, video and shot-framing prompts. Use when planning a film or series, adding a character or place, or when a character's look drifts between shots.",
+      "path": "skills/splice-universe-entities/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-universe-entities/SKILL.md",
+      "digest": "sha256:4e05b88a3a555626061d121b9de6b642468bc4bd4e95fbd84786f7002a173412"
+    },
+    {
+      "name": "splice-shot-takes",
+      "title": "Generate shots from a shotlist: takes, match previous shot, coverage, a whole scene",
+      "version": "1.2.0",
+      "description": "Generate takes of a shot in a Splice shotlist so every shot keeps the same characters, wardrobe, lighting and location: a take from the shot's own framing, lens and camera move; a take matched to the previous shot's hero; or a coverage pack (wide, medium, close-up, reverse angle, insert) with one quote. Use when someone is shooting a scene shot by shot, wants continuity between shots, or wants coverage of a moment.",
+      "path": "skills/splice-shot-takes/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-shot-takes/SKILL.md",
+      "digest": "sha256:395704363cd8b3c3e587e302f67a679e735015d6b8cda4e3a9eaa24bb7013b80"
+    },
+    {
+      "name": "splice-production-stages",
+      "title": "Take a Splice production through its stages: look, script, storyboard, shotlist, takes, Studio cut, export",
+      "version": "1.1.0",
+      "description": "Walk a Splice production from an idea to a finished cut, stage by stage: script, storyboard, shotlist, shoot (takes of every shot, AI or live action), Studio cut and export. One free status call says what each stage holds and the next step with the tool to call; one free call drafts the whole plan from a pitch. Use when someone wants to make a film, short, episode or ad in Splice, asks what's next for a production, or wants to pick up a production where it was left.",
+      "path": "skills/splice-production-stages/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-production-stages/SKILL.md",
+      "digest": "sha256:b4cdd6a0abacf178cb824d18d762667b15e8b6bf72831b114f5920f22acafd45"
+    },
+    {
+      "name": "splice-templates",
+      "title": "Use Splice templates",
+      "version": "1.0.0",
+      "description": "Find and run tested generation templates from Splice's public library (model + prompt + settings recipes for images, video, music and motion, e.g. camera moves, anime, product ads). Use when someone wants a proven look or effect, or a starting point, instead of writing a prompt from scratch.",
+      "path": "skills/splice-templates/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-templates/SKILL.md",
+      "digest": "sha256:aed2c72ecab53bd7b75afd1e526838b8ef23e0acf682611ef170113b8fc391e3"
+    },
+    {
+      "name": "splice-credits-and-pricing",
+      "title": "Check Splice prices, balance and top up",
+      "version": "1.0.0",
+      "description": "Look up what Splice generations cost, check the user's credit balance and top up credit packs (card, or Solana USDC/SOL/AUDD). Use before any expensive generation, when a call returns 402 (out of credits), or when someone asks how much Splice costs.",
+      "path": "skills/splice-credits-and-pricing/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-credits-and-pricing/SKILL.md",
+      "digest": "sha256:84a84c486c79ba425bf2d1586ba39a3d589e67d17b51b4fc6205af2519bdca86"
+    },
+    {
+      "name": "splice-prompting",
+      "title": "Prompt Splice's image, video and audio models well",
+      "version": "1.0.0",
+      "description": "How to write prompts for each AI model Splice offers (video, image, voice, music): per-model guides with reference-label syntax, prompt caps, parameter ranges, what each model ignores and verified examples, plus rules that hold on every model. Use before writing or fixing a prompt for a Splice model, or when someone asks how to prompt Seedance, MiniMax H3, Kling, Veo, Nano Banana or another model, or why a model ignored a reference.",
+      "path": "skills/splice-prompting/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-prompting/SKILL.md",
+      "digest": "sha256:ded09a092e1e765886800262004a7ca04d413164dd675b4245cff4da78d7cb6d"
+    },
+    {
+      "name": "splice-video-motion",
+      "title": "Direct movement in AI video with Splice",
+      "version": "1.0.0",
+      "description": "Direct movement in generated video and Motion compositions with Splice by film.fun: prompt anatomy for motion, the MiniMax H3 family and its settings (prompt expansion, first and last frame), camera language, timed beats for 10-15 s takes, text in video, long takes and joins, multi-shot takes with cuts, and a free prompt check per model. Use before writing a video prompt with camera moves or action, or when a generated clip moves wrongly.",
+      "path": "skills/splice-video-motion/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-video-motion/SKILL.md",
+      "digest": "sha256:fb5c29db0cb640bb54f7194879d2baf15671f18e0959b102546e22492586199c"
+    },
+    {
+      "name": "splice-motion-design",
+      "title": "Design motion graphics that feel intentional",
+      "version": "1.0.0",
+      "description": "Motion design craft for Splice Motion compositions (HTML + GSAP): pick the motion personality for the tone (corporate, playful, luxury, news, tech, cinematic) with its easing family, durations, travel and stagger, apply the animation principles, and check the result against an amateur-motion quality gate before rendering. Use before animating a title card, lower-third, kinetic type or stat reveal, or when motion looks cheap.",
+      "path": "skills/splice-motion-design/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-motion-design/SKILL.md",
+      "digest": "sha256:a9248592ebd93ec7d7a3aff27d4a87824c15c9e5b9b7c7017791765cd1734efc"
+    },
+    {
+      "name": "splice-production-formats",
+      "title": "Plan a whole video by format with Splice",
+      "version": "1.0.0",
+      "description": "Production craft for a finished video with Splice by film.fun: the segment anatomy of a social short, advert, explainer, news show, product demo or music video, the Splice asset each beat needs (image, video, voiceover, music, Motion composition, captions), durations for a target length, assembly notes and a pre-render QA checklist. Use when someone asks for a complete video rather than a single clip.",
+      "path": "skills/splice-production-formats/SKILL.md",
+      "url": "https://splice.film.fun/.well-known/agent-skills/splice-production-formats/SKILL.md",
+      "digest": "sha256:7cf876de5ef58d31761338ebcdf86394b74fbf9289fedd779eecf76bd9268df7"
+    }
+  ]
+}

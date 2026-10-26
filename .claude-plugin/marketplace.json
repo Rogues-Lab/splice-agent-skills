@@ -1,15 +1,23 @@
 {
   "name": "splice",
-  "description": "Splice by film.fun: AI image, video, voice, music and motion-graphics generation for agents.",
+  "description": "Splice by film.fun: AI filmmaking skills and the Splice MCP server.",
   "owner": {
     "name": "film.fun",
-    "url": "https://splice.film.fun"
+    "url": "https://www.film.fun"
   },
   "plugins": [
     {
       "name": "splice",
       "source": "./",
-      "description": "Splice agent skills plus the Splice remote MCP server (OAuth sign-in)."
+      "description": "Make films with Splice, film.fun's AI filmmaking studio: generate and edit images, video, voice and music, plan and shoot a production, cut it in Studio and render motion graphics. Skills plus the Splice remote MCP server (OAuth sign-in).",
+      "version": "1.4.0+skills.47e6a1992057",
+      "category": "media",
+      "tags": [
+        "video",
+        "image",
+        "audio",
+        "filmmaking"
+      ]
     }
   ]
 }

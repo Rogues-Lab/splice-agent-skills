@@ -1,0 +1,32 @@
+name: Validate
+
+# Checks this repo against skills.json and against what Splice serves live at
+# https://splice.film.fun/.well-known/agent-skills/ (see scripts/validate.mjs):
+# frontmatter, digests, orphan files and the bundle version.
+# The daily run catches production moving ahead of this repo.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Skills, digests, version
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate against the manifest
+        run: node scripts/validate.mjs --offline
+      - name: Validate against production
+        run: node scripts/validate.mjs
