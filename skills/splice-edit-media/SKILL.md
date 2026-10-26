@@ -18,6 +18,7 @@ Inputs are public https URLs, such as a `media_url` returned by `get_job`.
 - Image edit: `edit_image {input_url, prompt}` (e.g. "make it night", "remove the car").
 - Image upscale: `upscale_image {input_url, upscale_factor: 2x|4x|6x}`.
 - Video upscale: `upscale_video {video_url, target_resolution: 720p|1080p|4k}` (priced per second; see `list_models` type `video-upscale`).
+- Audio: `enhance_audio {audio_url | video_url, mode: enhance|denoise|super-resolution}`. enhance cleans up a noisy or muffled voice-over, denoise removes background noise only (both up to 300 s), super-resolution upsamples low-sample-rate music and effects to 48 kHz (up to 30 s). For speech, even phone-quality, use enhance. WAV out, priced on the source length; see `list_models` type `audio-enhance`.
 
 ## Over REST (`POST https://splice.film.fun/api/agents/edit/…`)
 
@@ -25,6 +26,7 @@ Inputs are public https URLs, such as a `media_url` returned by `get_job`.
 - `/edit/clip {video_url, start_time, end_time}`: trim.
 - `/edit/media-merge {input_urls[]}`: concatenate in order.
 - `/edit/caption-burner {video_url}`: burn captions.
+- `/edit/enhance-audio {audio_url | video_url, mode}`: enhance speech, denoise, or upscale to 48 kHz.
 - `/generate/lipsync {video_url, audio_url}` and `/transcribe {audio_url}`.
 
 Each returns `201 {production_item_id, production_id}`; poll `GET /api/agents/productions/{production_id}/items/{production_item_id}`.

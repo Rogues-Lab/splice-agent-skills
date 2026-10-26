@@ -17,8 +17,9 @@ A Motion composition is a self-contained HTML document animated with GSAP. Splic
 
 1. **List or create.** `list_compositions` shows the user's compositions. Create one over REST: `POST https://splice.film.fun/api/agents/compositions {title, payload}`, where `payload` is the HTML.
 2. **Check it.** `get_composition {composition_id}` returns the HTML, size and duration.
-3. **Render.** `render_composition {composition_id, output_format: mp4|webm|png, preview_seconds?}` (a flat price; see `list_models` type `composition-render`). `preview_seconds` renders a short range first.
-4. **Poll** `get_job` (about a minute) and return the `media_url`.
+3. **Check frames cheaply.** `render_composition {composition_id, output_format: "png", times_s: [0.5, 2, 4], transparent?}` captures a PNG at each time (up to 12, about 2 credits, priced by run cost). `transparent: true` keeps an alpha background for overlays.
+4. **Render.** `render_composition {composition_id, output_format: mp4|webm, preview_seconds?}` (a flat price; see `list_models` type `composition-render`). `preview_seconds` renders a short range first.
+5. **Poll** `get_job` (stills: well under a minute; video: about a minute) and return the `media_url` (for stills, every frame is in `stills[{time_s, url}]`).
 
 Keep image-heavy HD compositions light: they can time out. Render a short preview before the full length.
 
